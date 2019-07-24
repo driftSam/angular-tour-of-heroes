@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "var": "cross-conf-env echo npm_package_config_app npm_package_version"
+  },
+  "config": {
+    "app": "MyApp"
   },
   "private": true,
   "dependencies": {
@@ -28,10 +32,11 @@
     "@angular/cli": "~8.0.4",
     "@angular/compiler-cli": "~8.0.1",
     "@angular/language-service": "~8.0.1",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cross-conf-env": "^1.1.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
